@@ -1,0 +1,54 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.banner {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.banner video {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.banner i.fa {
+	background: #fff;
+	color: #000;
+	font-size: 35vw;
+	height: 100%;
+	line-height: 100vh;
+	mix-blend-mode: screen;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.banner i.fa:hover {
+	background: #000;
+	color: #fff;
+}
+
+@media (max-width: 368px) {
+	.banner {
+		flex-direction: column;
+	}
+
+	.banner i.fa {
+		font-size: 50vw;
+		height: 50%;
+		line-height: 50vh;
+	}
+}
